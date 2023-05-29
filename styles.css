@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+body{
+    
+    background-color: #000000;
+}
+/*NAVBAR. EDITARLO MEJOR*/
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #130303;
+}
+
+.titulo { color: white;
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    transition: all ease-in 200ms;
+border-radius: 10px;}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+hero{
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-hero{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+nav{width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+padding: 20px 8%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+nav .logo{
+    width: 80px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+ul li a{
+    text-decoration: none;
+    color:#000000;
+    font-weight: 500;
+    font-size: 25px;
+    
+    padding: 10px;
+   
+}
+
+ul li a:hover{
+color: rgb(22, 9, 12);
+background-color: white;
+transition: all ease-in 200ms;
+
+}
+/*TERMINA NAVBAR*/
+
+/*HERO*/
+.hero{
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-hero{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+.hero-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.contenido{
+    min-width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+.contenido h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    
+}
+.contenido p{
+    font-size: 45px;  
+}
+/*TERMNA HERO*/
+
+/*PRODUCTOS*/
+.nuestros-productos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(44, 12, 12);
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+.nuestros-productos h2{
+    font-size: 35px;
+    padding: 30px;
+    color: white;
+}
+.nuestros-productos h4{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    
+}
+.nuestros-productos h4:hover{
+    text-decoration: underline;
+    transition: 1s all ease-in;
+    
+}
+.contenedor-productos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    
+}
+.producto{
+    background-color: white;
+    width: 220px;
+    height: 400px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.producto-detalles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    gap:10px;
+}
+.producto-detalles h3{
+padding: 20px;
+font-size: 20px;
+}
+.producto-detalles p{
+    font-size: 25px;
+}
+.producto-agregar{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    text-transform: uppercase;
+}
+
+.producto-agregar:hover{
+    background-color: rgb(68, 151, 126);
+    color: rgb(0, 0, 0);
+}
+.imagen-carta{
+  height: 200px;
+  padding-bottom: 15px;
+  border-radius: 15px 15px 0 0;
+  background-size: cover;
+}
+/*MEJORAR FOTOS DE LAS CARTAS*/
+
+.car-1{
+    background-image: url(./assets/tabla-1.jpeg);
+}
+.car-2{
+    background-image: url(./assets/tabla-2.jpg);
+}
+.car-3{
+background-image: url(./assets/tabla-3.jpeg);
+}
+.car-4{
+background-image: url(./assets/tabla-4.jpeg);
+}
+/*TERMINA PRODUCTOS*/
+
+
+/*FOOTER*/
+footer{width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding: 100px;
+    }
+
+    .contenedor-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        padding: 20px;
+    
+    }
+
+    .redes{
+        width: 35%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      
+    }
+    .redes h3{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        color: white;
+        margin-bottom: 43px;
+    }
+    .redes-icon{
+        display: flex;
+        gap: 100px;
+        padding-top: 20px;
+    }
+    .redes-icon i{
+        font-size: 40px;
+        color: white;
+    }
+    .icon-container {
+        cursor: pointer;
+        border-radius: 50%;
+        padding: 10px;
+        transition: all 200ms ease;
+      }
+      
+      .icon-container:hover {
+        background-color: #124d17;
+        transition: all 200ms ease;
+      }
+    
+
+    .marca h4{
+        color: rgb(8, 5, 5);
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+/*VIDEO MEDIAQUERYS*/
+@media (min-aspect-ratio: 16/9){
+    .video-hero{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .video-hero{
+        width: auto;
+        height: 100%;
+    }
+}
+/*FIN VIDEO MEDIAQUERYS*/
+
+@media (max-width: 800px) {
+    /*NAVBAR*/
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    footer{
+        padding: 10px;
+        }
+        
+        .redes-icon{gap: 20px;}
+        
+}
+/*TERMINA NAVBAR*/
