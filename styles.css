@@ -178,6 +178,18 @@ transition: all ease-in 200ms;
 /*TERMNA HERO*/
 
 /*PRODUCTOS*/
+.nuestros-productos a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+
+}
+.nuestros-productos a:hover{
+    background-color: rgb(68, 151, 126);
+    color: rgb(0, 0, 0);
+    
+    transition: 0.3s all ease-in;
+}
 .nuestros-productos{
     display: flex;
     justify-content: center;
@@ -193,17 +205,7 @@ transition: all ease-in 200ms;
     padding: 30px;
     color: white;
 }
-.nuestros-productos h4{
-    font-size: 25px;
-    color: white;
-    cursor: pointer;
-    
-}
-.nuestros-productos h4:hover{
-    text-decoration: underline;
-    transition: 1s all ease-in;
-    
-}
+
 .contenedor-productos{
     display: flex;
     align-items: center;
@@ -343,6 +345,61 @@ footer{width: 100%;
         text-transform: uppercase;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+
+/*carrito*/
+.carrito-productos{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid green
+}
+.carrito-productos h2{
+    font-size: 40px;
+}
+.contenedor-carrito{
+    border: 1px solid green;
+    width: 100%;
+    display:flex ;
+    justify-content:center ;
+    flex-direction: column;
+    align-items:center ;
+}
+.productos-carrito{
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    display:flex ;
+    justify-content:center ;
+    align-items:center;
+}
+.producto-carrito{
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+}
+.carrito-acciones{
+    border:1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    gap: 10px;
+}
+.carrito-acciones-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+gap: 30px;
+}
+.carrito-total{display:flex ;
+flex-direction: column;
+align-items: center;
+gap: 10px;}
 /*VIDEO MEDIAQUERYS*/
 @media (min-aspect-ratio: 16/9){
     .video-hero{

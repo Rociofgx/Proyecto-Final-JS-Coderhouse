@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final JS Gomez Rocio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script
+    src="https://kit.fontawesome.com/a13dba3b57.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="titulo">Sushi Ti-ti</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+    </nav>
+    <section class="carrito-productos">
+        <h2 class="titulo-carrito">¡Tu carrito!</h2>
+        <div class="contenedor-carrito">
+            <p class="carrito-vacio">¡Carrito vacio!</p>
+
+            <div class="productos-carrito">
+<div class="producto-carrito">
+    <img src="./assets/tabla-1.jpeg" alt="" height="50px">
+    <div class="carrito-producto-titulo">
+        <small>Producto</small>
+        <h3>Tabla 1</h3>
+    </div>
+    <div class="carrito-producto-cantidad">
+        <small>Cantidad</small>
+        <p>1</p>
+    </div>
+    <div class="carrito-producto-precio">
+        <small>Precio</small>
+        <p>1000</p>
+    </div>
+    <div class="carrito-producto-subtotal">
+        <small>Subtotal</small>
+        <p>2000</p>
+    </div>
+    <button class="eliminar"><i class="fa-regular fa-trash-can"></i></button>
+</div>
+<div class="carrito-acciones">
+    <div class="carrito-vaciar">
+        <button class="btn-vaciar">Vaciar</button>
+    </div>
+    <div class="carrito-acciones-2">
+        <div class="carrito-total">
+            <p>Total</p>
+            <p id="total">$3000</p>
+        </div>
+        <button class="comprarbtn">¡Comprar!</button>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
